@@ -40,23 +40,25 @@ public class Main {
             System.out.println();
             {
                 // Задача № 4
-                int deliveryDistance = 150;
-                if (deliveryDistance <= 20) {
+                int deliveryDistance = 110;
+
+                if (deliveryDistance > 100) {
+                System.out.println("Доставка не осуществляется");
+                } else {
                     int deliveryDays = 1;
-                    System.out.println("Потребуется количество дней - " + deliveryDays);
-                    if (deliveryDistance > 20 && deliveryDistance <= 60)
-                        deliveryDays++;
-                        System.out.println("Потребуется количество дней - " + deliveryDays++);
-                    if (deliveryDistance > 60 && deliveryDistance <= 100)
-                        deliveryDays++;
-                        System.out.println("Потребуется количество дней - " + deliveryDays++);
-                    } else {
-                        System.out.println("Доставка не осуществляется");
+                    if (deliveryDistance >= 20 && deliveryDistance < 60) {}
+                    deliveryDays++;
+                    if (deliveryDistance >= 60 && deliveryDistance < 80) {}
+                    deliveryDays++;
+                    if (deliveryDistance >= 80 && deliveryDistance < 100) {
+                    deliveryDays++;}
+                       System.out.println("Потребуется количество дней - " + deliveryDays);
+                                    }
                     }
                 }
 
             }
 
         }
-    }
+
 
