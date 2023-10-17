@@ -40,18 +40,18 @@ public class Main {
             System.out.println();
             {
                 // Задача № 4
-                int deliveryDistance = 110;
+                int deliveryDistance = 30;
 
                 if (deliveryDistance > 100) {
                 System.out.println("Доставка не осуществляется");
                 } else {
                     int deliveryDays = 1;
-                    if (deliveryDistance >= 20 && deliveryDistance < 60) {}
-                    deliveryDays++;
-                    if (deliveryDistance >= 60 && deliveryDistance < 80) {}
-                    deliveryDays++;
-                    if (deliveryDistance >= 80 && deliveryDistance < 100) {
+                    if (deliveryDistance >= 20 && deliveryDistance < 60) {
                     deliveryDays++;}
+                     else if (deliveryDistance >= 60 && deliveryDistance < 80) {
+                    deliveryDays = deliveryDays + 2;}
+                     else if (deliveryDistance >= 80 && deliveryDistance < 100) {
+                    deliveryDays = deliveryDays + 3;}
                        System.out.println("Потребуется количество дней - " + deliveryDays);
                                     }
                     }
